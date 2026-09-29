@@ -6,9 +6,10 @@
   <title>Babanorth Labs</title>
   <meta name="description" content="Babanorth Labs is operated by 18246955 Canada Inc., Mississauga, Ontario, Canada. We design and publish mobile apps, including Orant.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="home">
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/"><img src="/favicon.svg" alt="">Babanorth Labs</a>
@@ -22,50 +23,87 @@
   </header>
 
   <main>
-    <div class="wrap">
-      <h1>Babanorth Labs</h1>
-      <p class="lead">Babanorth Labs is operated by 18246955 Canada Inc., Mississauga, Ontario, Canada.</p>
-
-      <section>
-        <h2>About us</h2>
-        <p>Babanorth Labs is a Canadian software company. We design, build, and publish mobile apps for Android and iOS. We focus on calm, useful apps that respect people's time and privacy.</p>
-        <p>We handle everything in-house: product design, development, publishing on Google Play and the App Store, and customer support.</p>
-      </section>
-
-      <section class="card">
-        <h2>Our app: Orant</h2>
-        <p>Orant is a Christian prayer and Bible app. It helps people build a daily habit of prayer and Bible reading. Learn more at <a href="https://orant.online">orant.online</a>.</p>
-        <ul>
-          <li><strong>Bible reader</strong>: read Scripture with a clean, distraction-free layout.</li>
-          <li><strong>Guided prayer</strong>: prayers and reading plans for everyday life, with a prayer counter.</li>
-          <li><strong>Quizzes</strong>: test and grow your Bible knowledge, book by book.</li>
-          <li><strong>Journal</strong>: write down prayers and reflections, saved on your device.</li>
-          <li><strong>Breathe</strong>: guided breathing to slow down and focus.</li>
-          <li><strong>Reminders</strong>: gentle daily prayer reminders at the time you choose.</li>
-        </ul>
-        <p class="muted">Orant is free and supported by ads.</p>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Independent app studio · Canada</span>
+        <h1>Calm, useful apps, made with care.</h1>
+        <p class="lead">Babanorth Labs is operated by 18246955 Canada Inc., Mississauga, Ontario, Canada. We design, build, and publish mobile apps for Android and iOS.</p>
         <div class="buttons">
-          <a class="btn btn-primary" href="https://orant.online">Visit orant.online</a>
-          <span class="btn btn-disabled" aria-disabled="true">Google Play: coming soon</span>
-          <span class="btn btn-disabled" aria-disabled="true">App Store: coming soon</span>
+          <a class="btn btn-primary" href="#orant">See our app</a>
+          <a class="btn btn-ghost" href="mailto:info@babanorthlabs.com">info@babanorthlabs.com</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="section">
+        <div class="section-head">
+          <span class="eyebrow">About us</span>
+          <h2>A small studio with a clear focus</h2>
+          <p class="muted">We make apps that do one job well, respect people's time, and treat privacy as a feature. Everything happens in-house.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <span class="num">01</span>
+            <h3>Design</h3>
+            <p class="muted">Quiet, readable interfaces that work for everyone, in light and dark.</p>
+          </div>
+          <div class="card">
+            <span class="num">02</span>
+            <h3>Build</h3>
+            <p class="muted">Fast, reliable apps for Android and iOS from a single codebase.</p>
+          </div>
+          <div class="card">
+            <span class="num">03</span>
+            <h3>Publish &amp; support</h3>
+            <p class="muted">We ship on Google Play and the App Store, and answer every support email.</p>
+          </div>
         </div>
       </section>
 
-      <section class="card">
-        <h2>Company information</h2>
-        <p>
-          <strong>Legal name:</strong> 18246955 Canada Inc.<br>
-          <strong>Operating as:</strong> Babanorth Labs<br>
-          <strong>Type:</strong> Federal corporation (Canada)<br>
-          <strong>Address:</strong> 448 Gibraltar Dr, Unit 9, Mississauga, Ontario L5T 2N8, Canada<br>
-          <strong>Email:</strong> <a href="mailto:info@babanorthlabs.com">info@babanorthlabs.com</a>
-        </p>
+      <section class="section" id="orant">
+        <div class="feature">
+          <img class="app-icon" src="/assets/img/orant-icon.png" alt="Orant app icon" width="96" height="96">
+          <div>
+            <span class="eyebrow">Our app</span>
+            <h2>Orant</h2>
+            <p>A Christian prayer and Bible app that helps people build a daily habit of prayer and Bible reading.</p>
+            <ul>
+              <li>Bible reader <span>· clean and distraction-free</span></li>
+              <li>Guided prayer <span>· with a prayer counter</span></li>
+              <li>Quizzes <span>· book by book</span></li>
+              <li>Journal <span>· saved on your device</span></li>
+              <li>Breathe <span>· guided breathing</span></li>
+              <li>Reminders <span>· at the time you choose</span></li>
+            </ul>
+            <div class="buttons">
+              <a class="btn btn-primary" href="https://orant.online">Visit orant.online</a>
+              <span class="btn btn-disabled" aria-disabled="true">Google Play: coming soon</span>
+              <span class="btn btn-disabled" aria-disabled="true">App Store: coming soon</span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="card">
-        <h2>Contact</h2>
-        <p>For questions, partnerships, or support, email <a href="mailto:info@babanorthlabs.com">info@babanorthlabs.com</a>. We reply within 2 business days.</p>
-        <p class="muted">Need help with Orant? Visit our <a href="/support/">Support page</a>. Read our <a href="/privacy/">Privacy Policy</a>.</p>
+      <section class="section">
+        <div class="grid grid-2">
+          <div class="card">
+            <span class="eyebrow">Company information</span>
+            <dl class="facts">
+              <dt>Legal name</dt><dd>18246955 Canada Inc.</dd>
+              <dt>Operating as</dt><dd>Babanorth Labs</dd>
+              <dt>Type</dt><dd>Federal corporation (Canada)</dd>
+              <dt>Address</dt><dd>448 Gibraltar Dr, Unit 9<br>Mississauga, Ontario L5T 2N8<br>Canada</dd>
+              <dt>Email</dt><dd><a href="mailto:info@babanorthlabs.com">info@babanorthlabs.com</a></dd>
+            </dl>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Contact</span>
+            <h3>Get in touch</h3>
+            <p class="muted">For questions, partnerships, or support, email <a href="mailto:info@babanorthlabs.com">info@babanorthlabs.com</a>. We reply within 2 business days.</p>
+            <p class="muted">Need help with Orant? Visit <a href="/support/">Support</a> or read our <a href="/privacy/">Privacy Policy</a>.</p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
